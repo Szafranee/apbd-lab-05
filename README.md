@@ -73,11 +73,11 @@
         "color": "White"
       }
       ```
-  - DELETE
-    - Deletes the animal of the given id:
-      ```
-      /animals/{animalId}
-      ```
+- DELETE
+  - Deletes the animal of the given id:
+    ```
+    /animals/{animalId}
+    ```
       
 
     
