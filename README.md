@@ -4,7 +4,7 @@
 
 #### Totally accurate representation of this task - totally not AI-generated (fr fr, trust me bro):
 
-<img src="img/animals_list.jpg" alt="[Totally accurate representation of this task 1" style="height: 500; width: 500px;"/> <img src="img/animals_visits.jpg" alt="[Totally accurate representation of this task 2" style="height: 500px; width: 500px;"/>
+<img src="img/animals_list.jpg" alt="[Totally accurate representation of this task 1" style="height: 400; width: 400px;"/> <img src="img/animals_visits.jpg" alt="[Totally accurate representation of this task 2" style="height: 400px; width: 400px;"/>
 
 ## I used MinimalApi to make it shorter and simpler
 
