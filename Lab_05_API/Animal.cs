@@ -7,7 +7,7 @@ public class Animal(int id, string name, string type, double weight, string colo
     public string Type { get; set; } = type;
     public double Weight { get; set; } = weight;
     public string Color { get; set; } = color;
-    private ICollection<Visit> _vetVisits = new List<Visit>();
+    private readonly ICollection<Visit> _vetVisits = new List<Visit>();
 
     public void AddVetVisit(Visit visit)
     {

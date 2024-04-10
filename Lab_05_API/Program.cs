@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IShelterDb, ShelterDb>();
 
 var app = builder.Build();
 
@@ -49,6 +50,7 @@ app.MapPost("/animals/{animalId:int}/visits", (IShelterDb shelterDb, int animalI
     var animal = shelterDb.GetById(animalId);
     if (animal is null) return Results.NotFound();
 
+    visitToAdd.AnimalId = animalId;
     animal.AddVetVisit(visitToAdd);
     return Results.Created();
 });
@@ -59,6 +61,7 @@ app.MapPut("/animals/{animalId:int}", (IShelterDb shelterDb, int animalId, Anima
     var animal = shelterDb.GetById(animalId);
     if (animal is null) return Results.NotFound();
 
+    animal.Id = animalToUpdate.Id;
     animal.Name = animalToUpdate.Name;
     animal.Type = animalToUpdate.Type;
     animal.Weight = animalToUpdate.Weight;
