@@ -10,7 +10,7 @@
 
 ### API endpoints:
 
-- GET
+- **GET**
   
   - Gets list of stred animals: 
     ```
@@ -28,7 +28,7 @@
     ```
     
 
-- POST 
+- **POST** 
   - Adds new animal - POST
     ```
     /animals
@@ -58,7 +58,7 @@
         "cost": 100
       }
       ```
-- PUT
+- **PUT**
   - Updates the animal of the given id:
     ```
     /animals/{animalId}
