@@ -29,7 +29,7 @@
     
 
 - **POST** 
-  - Adds new animal - POST
+  - Adds new animal
     ```
     /animals
     ```
